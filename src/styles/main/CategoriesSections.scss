@@ -1,0 +1,301 @@
+section {
+  position: relative;
+}
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.collection {
+  background-color: #fff;
+  border: 1px solid #cedfef;
+  margin-bottom: 12px;
+}
+.collection-section {
+  border-left: 0;
+  border-right: 0;
+}
+@media screen and (min-width: 768px) {
+  .collection-section {
+    background-color: initial;
+    border: 0;
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .collection-section {
+    background-color: inherit;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .collection-section {
+    margin-bottom: 48px;
+  }
+}
+.collection .heading {
+  margin-bottom: 8px;
+}
+.collection-section .heading {
+  padding: 0 16px;
+}
+.collection-section .heading:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (min-width: 768px) {
+  .collection-section .heading {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 10px;
+  }
+}
+.collection .heading .title {
+  color: #222;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.collection-section .heading .title {
+  float: left;
+}
+@media screen and (min-width: 768px) {
+  .collection-section .heading .title {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .collection-section .heading .title {
+    font-size: 24px;
+  }
+}
+.collection-section .heading .more {
+  float: right;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 24px;
+}
+@media screen and (min-width: 768px) {
+  .collection-section .heading .more {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .collection-section .heading .more {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .collection-section .content {
+    display: table;
+    overflow: hidden;
+    width: 100%;
+  }
+}
+.collection-section .latest {
+  position: relative;
+}
+@media screen and (min-width: 1024px) {
+  .collection-section .article-list, .collection-section .latest {
+    display: table-cell;
+    height: auto;
+    width: 50%;
+    vertical-align: top;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .collection-section .latest {
+    background-color: #000;
+  }
+}
+@media screen and (min-width: 768px) {
+  .collection-section .article:last-of-type {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .collection-section .latest .article {
+    position: initial;
+  }
+}
+.collection-section .latest .m {
+  background-color: #000;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .collection-section .latest .m {
+    min-height: 405px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .collection-section .latest .m {
+    min-height: 279px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .collection-section .latest .m {
+    min-height: 391px;
+  }
+}
+.collection-section .latest .m a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0)),to(black));
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0) 0,#000 100%);
+  bottom: 0;
+  height: 70%;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .collection-section .latest .m a:after {
+    bottom: -1px;
+  }
+}
+.collection-section .latest .m img {
+  min-height: 188px;
+}
+@media screen and (min-width: 375px) {
+  .collection-section .latest .m img {
+    min-height: 210px;
+  }
+}
+.collection-section .latest .info {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: visible;
+  width: 100%;
+}
+.collection-section .latest .meta {
+  position: absolute;
+  top: -24px;
+  left: 16px;
+}
+@media screen and (min-width: 768px) {
+  .collection-section .latest .meta {
+    left: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .collection-section .article .meta {
+    margin-bottom: 6px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .collection-section .latest .meta {
+    left: 16px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .collection-section .latest .meta {
+    left: 30px;
+  }
+}
+.article .meta:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.collection-section .latest .eyebrow {
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .collection-section .latest .eyebrow, .collection-section .latest .time {
+    color: #fff;
+  }
+}
+.collection-section .latest .title {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .collection-section .latest .title {
+    font-size: 30px;
+    line-height: 32px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .collection-section .latest .title {
+    font-size: 30px;
+    line-height: 32px;
+  }
+}
+
+.collection-section .latest .title a {
+  text-shadow: 1px 1px 1px #000;
+  display: block;
+  color: #fff;
+  padding: 0 16px 12px 16px;
+}
+@media screen and (min-width: 768px) {
+  .collection-section .latest .title a {
+    padding: 0 30px 30px 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .collection-section .latest .title a {
+    padding: 0 16px 16px 16px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .collection-section .latest .title a {
+    padding: 0 30px 30px 30px;
+  }
+}
+.article-list {
+  clear: both;
+}
+@media screen and (min-width: 768px) {
+  .article-list {
+    clear: both;
+  }
+}
+.collection-section .article-list {
+  padding: 16px 16px 0 16px;
+}
+@media screen and (min-width: 768px) {
+  .collection-section .article-list {
+    background-color: #fff;
+    border: 1px solid #cedfef;
+    padding: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .collection-section .article-list, .collection-section .latest {
+    display: table-cell;
+    height: auto;
+    width: 50%;
+    vertical-align: top;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .collection-section .article-list {
+    background-color: #fff;
+    padding: 20px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .collection-section .article-list {
+    padding: 30px;
+  }
+}
+.collection .content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.article-list .article {
+  border-bottom: 1px solid #cedfef;
+  padding: 0 0 12px 0;
+  margin: 0 0 16px 0;
+}
+@media screen and (min-width: 768px) {
+  .article-list .article {
+    padding: 0 0 16px 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .collection-section .article-list .article {
+    margin-bottom: 12px;
+  }
+}

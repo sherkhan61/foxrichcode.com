@@ -1,0 +1,136 @@
+.page-blog .blog-login {
+  margin-top: 2.4rem;
+}
+.blog-header {
+  border-top: 4px solid #c20017;
+  background: #003366;
+  height: 48px;
+  & h1 {
+    font-size: 3rem;
+    font-family: inherit;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+@media screen and (min-width: 768px) {
+  .blog-header h1 {
+    font-size: 3.6rem;
+  }
+}
+.blog-content {
+  background: #ffffff;
+  border-left: 1px solid #cedfef;
+  border-right: 1px solid #cedfef;
+  padding: 24px 16px;
+}
+.page-blog .blog-content {
+  max-width: 29rem;
+}
+.page-blog .blog-header, .page-blog .blog-content, .page-blog .blog-footer {
+  border: 0;
+  padding-left: 0;
+  padding-right: 0;
+  background: transparent;
+  text-align: center;
+  margin: 0 auto;
+  height: auto;
+}
+.blog-row {
+  display: table;
+  margin-bottom: 16px;
+  width: 100%;
+}
+.blog-input-text, .blog-input-number, .blog-input-password, .blog-select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.blog-input-text, .blog-input-number, .blog-input-password {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #cedfef;
+  color: #000000;
+  font-size: 16px;
+  padding: 0 14px;
+  height: 41px;
+  width: 100%;
+}
+.blog-btn {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  display: block;
+  border-width: 1px;
+  border-style: solid;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  padding: 12px 16px;
+  width: 100%;
+}
+.blog-btn-primary {
+  color: #ffffff;
+  background: #1b4e81;
+  border-color: #1b4e81;
+}
+.blog-btn-primary-alt {
+  color: #003366;
+  background-color: #edf6ff;
+  border-color: #a7c6e5;
+}
+.blog-footer p {
+  font-size: 12px;
+  line-height: 16px;
+}
+.page-blog p a {
+  color: #003366;
+  background: #edf6ff;
+  border-bottom: 2px solid #5787b8;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.blog-label {
+  display: block;
+  color: #000000;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 1024px) {
+  .blog-label {
+    display: table-cell;
+    vertical-align: top;
+    line-height: 40px;
+    padding-right: 16px;
+    text-align: right;
+    width: 150px;
+  }
+}
+.blog-content .blog-label {
+  display: block;
+  padding: 0;
+  line-height: 20px;
+  text-align: left;
+  width: auto;
+}
+.blog-checkbox-row .blog-label {
+  font-weight: normal;
+  line-height: 21px;
+  width: auto;
+}
+.blog-checkbox-row .blog-input-checkbox {
+  float: left;
+  margin: 4px 12px 0 0;
+}
+.blog-checkbox-row .blog-input-checkbox + span {
+  display: inline-block;
+  width: calc(100% - 32px);
+}
+form svg {
+  margin-left: -30px;
+  cursor: pointer;
+}

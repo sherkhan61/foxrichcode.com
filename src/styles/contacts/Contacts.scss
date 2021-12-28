@@ -1,0 +1,94 @@
+.contacts {
+  padding: 0 1rem 0 1rem;
+}
+.contacts-title {
+  margin: 1.3rem 0;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #036;
+}
+.contacts-description {
+  margin: 2rem 0;
+  color: #036;
+}
+.contacts_container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 6rem 0;
+}
+@media (max-width: 768px) {
+  .contacts-left {
+    position: relative;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .contacts-right {
+    position: relative;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .contacts-left {
+    width: 30rem;
+    margin-right: 3rem;
+  }
+  .contacts-right {
+    width: 46rem;
+  }
+}
+.contacts-block h4 {
+  margin: 0 0 10px;
+  padding: 0;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.03rem;
+  text-transform: uppercase;
+  color: #a6a6a6;
+}
+.contacts-support {
+  margin-bottom: 4.5rem;
+}
+.support-email {
+  margin: 0.5rem 0;
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+.contacts-partnership p {
+  color: #036;
+}
+.form-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.form-control {
+  box-sizing: border-box;
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #dedede;
+  border-radius: 3px;
+  width: 100%;
+  height: 40px;
+  background: #fff none;
+  line-height: 20px;
+  font-size: 16px;
+  color: #333;
+  -webkit-transition: border-color .2s,box-shadow .2s;
+  -moz-transition: border-color .2s,box-shadow .2s;
+  -ms-transition: border-color .2s,box-shadow .2s;
+  transition: border-color .2s,box-shadow .2s;
+}
+.form-error {
+  display: none;
+  margin-top: 5px;
+  color: #f11;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+}
+.contacts-form .contacts-form-message .form-control {
+  height: 100px;
+  width: 100%;
+  resize: none;
+}
