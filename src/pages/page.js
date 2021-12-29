@@ -59,7 +59,7 @@ export default class Page extends React.Component {
   render() {
     let { data } = this.props
     const review = data.strapiArticles
-    const domain = `https://api.foxrichcode.com`
+    const domain = `https://foxrichcode.netlify.app`
     const shareUrl = `${domain}/page/${review.strapiId}/${review.link}`
     const seoTitle = `${review.title} | Foxrichcode.com`
 
@@ -107,7 +107,7 @@ export default class Page extends React.Component {
                     </div>
                     <div className="entry__img-holder">
                       <img
-                        src={`${domain}${review.media.url}`}
+                        src={review.media.url}
                         alt={review.media.name} className="entry__img"/>
 
                     </div>
@@ -181,7 +181,6 @@ export default class Page extends React.Component {
                       </div>
                       <div className="entry__article">
                         <ReactMarkdown>{review.description}</ReactMarkdown>
-                        {/*<p className="author">Автор: </p>*/}
                       </div>
                     </div>
                   </article>
