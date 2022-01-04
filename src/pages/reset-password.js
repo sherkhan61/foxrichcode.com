@@ -18,7 +18,7 @@ export default class ResetPassword extends React.Component {
       passwordConfirmation: this.passwordConfirmation,
     }
 
-    axios.post('https://foxrichcode.com/auth/reset-password', data)
+    axios.post('https://api-foxrichcode.herokuapp.com/auth/reset-password', data)
       .then(response => {
         console.log("Your user's password has been reset.", console.log(response));
         this.setState({

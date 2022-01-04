@@ -5,9 +5,7 @@ module.exports = {
     description: "A simple blog built with Gatsby and Strapi",
     siteUrl: `https://foxrichcode.com`,
   },
-  plugins: [`gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sass`,
+  plugins: [`gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

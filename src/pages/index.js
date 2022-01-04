@@ -18,7 +18,7 @@ export default class Home extends React.Component {
       }
     }
 
-    axios.get(`https://foxrichcode.com/users/me`, config)
+    axios.get(`https://api-foxrichcode.herokuapp.com/users/me`, config)
       .then(response => {
           this.setUser(response.data)
         },
@@ -37,7 +37,7 @@ export default class Home extends React.Component {
 
     return (
       <Layout user={this.state.user} setUser={this.setUser}>
-        <Seo title={'Сайт по программированию и кибербезопасности - Foxrichcode.com'}/>
+        <Seo title={'Foxrichcode.com | Программирование, кибербезопасность и искусственный интеллект'}/>
         <main className="main">
           <Main/>
           <Scroll showBelow={250}/>

@@ -20,7 +20,7 @@ export default class SignIn extends React.Component {
     }
 
     axios
-      .post("https://foxrichcode.com/auth/local", data)
+      .post("https://api-foxrichcode.herokuapp.com/auth/local", data)
       .then(response => {
         localStorage.setItem('token', response.data.jwt)
         this.setState({
@@ -29,8 +29,6 @@ export default class SignIn extends React.Component {
         /*this.props.setUsers(response.data.users)*/
         // Handle success.
         console.log("Well done!")
-        console.log("User profile", response.data.user)
-        console.log("User token", response.data.jwt)
       })
       .catch(error => {
         // Handle error.
@@ -58,10 +56,11 @@ export default class SignIn extends React.Component {
                 <div className="blog-content">
                   <form onSubmit={this.handleSubmit} className="blog-form login-form">
                     <div className="blog-row">
-                      <input type="text"
-                             name="text"
+                      <input type="email"
+                             name="email"
                              className="blog-input-text"
-                             placeholder="имя пользователя или email"
+                             placeholder="email"
+                             autoComplete="off"
                              onChange={e => this.identifier = e.target.value}/>
                     </div>
                     <div className="blog-row">
@@ -69,6 +68,7 @@ export default class SignIn extends React.Component {
                              name="password"
                              className="blog-input-password"
                              placeholder="пароль"
+                             autoComplete="off"
                              onChange={e => this.password = e.target.value}/>
                     </div>
                     <div className="blog-row">

@@ -17,7 +17,7 @@ class Contact extends React.Component {
       }
     }
 
-    axios.get(`https://foxrichcode.com/users/me`, config)
+    axios.get(`https://api-foxrichcode.herokuapp.com/users/me`, config)
       .then(response => {
           this.setUser(response.data)
         },

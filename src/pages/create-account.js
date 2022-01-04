@@ -23,7 +23,7 @@ export default class CreateAccount extends React.Component {
 
 
     axios
-      .post('https://foxrichcode.com/auth/local/register', data)
+      .post('https://api-foxrichcode.herokuapp.com/auth/local/register', data)
       .then(response => {
         localStorage.setItem('token', response.data.jwt)
         this.setState({
@@ -43,7 +43,7 @@ export default class CreateAccount extends React.Component {
 
 render() {
   if(this.state.isauthenticated) {
-    return <RedirectFunction url={'/'} />
+    return <RedirectFunction url={'/information'} />
   }
     return (
       <>
@@ -59,27 +59,7 @@ render() {
                 <div className="blog-content">
                   <form onSubmit={this.handleSubmit} className="blog-form login-form">
                     <div className="blog-row">
-                      <label htmlFor="email" className="blog-label">Email</label>
-                      <input type="email"
-                             id="email"
-                             name="email"
-                             className="blog-input-text"
-                             placeholder="Введите ваш email"
-                             autoComplete="off"
-                             onChange={e => this.email = e.target.value}/>
-                    </div>
-                    <div className="blog-row">
-                      <label htmlFor="password" className="blog-label">Пароль</label>
-                      <input type="password"
-                             id="password"
-                             name="password"
-                             className="blog-input-password"
-                             placeholder="Введите ваш пароль"
-                             autoComplete="off"
-                             onChange={e => this.password = e.target.value}/>
-                    </div>
-                    <div className="blog-row">
-                      <label htmlFor="firsName" className="blog-label">Имя</label>
+                      <label htmlFor="firsName" className="blog-label">Имя *</label>
                       <input type="text"
                              id="firstName"
                              name="firstName"
@@ -89,7 +69,7 @@ render() {
                              onChange={e => this.firstname = e.target.value}/>
                     </div>
                     <div className="blog-row">
-                      <label htmlFor="lastName" className="blog-label">Фамилия</label>
+                      <label htmlFor="lastName" className="blog-label">Фамилия *</label>
                       <input type="text"
                              id="lastName"
                              name="lastName"
@@ -99,14 +79,34 @@ render() {
                              onChange={e => this.lastname = e.target.value}/>
                     </div>
                     <div className="blog-row">
-                      <label htmlFor="userName" className="blog-label">Имя аккаунта</label>
+                      <label htmlFor="userName" className="blog-label">Имя аккаунта *</label>
                       <input type="text"
                              id="userName"
                              name="userName"
                              className="blog-input-text"
-                             placeholder="Имя аккаунта"
+                             placeholder="придумайте для себя имя аккаунта"
                              autoComplete="off"
                              onChange={e => this.username = e.target.value}/>
+                    </div>
+                    <div className="blog-row">
+                      <label htmlFor="email" className="blog-label">Email *</label>
+                      <input type="email"
+                             id="email"
+                             name="email"
+                             className="blog-input-text"
+                             placeholder="Введите ваш email"
+                             autoComplete="off"
+                             onChange={e => this.email = e.target.value}/>
+                    </div>
+                    <div className="blog-row">
+                      <label htmlFor="password" className="blog-label">Пароль *</label>
+                      <input type="password"
+                             id="password"
+                             name="password"
+                             className="blog-input-password"
+                             placeholder="Введите ваш пароль"
+                             autoComplete="off"
+                             onChange={e => this.password = e.target.value}/>
                     </div>
                     <div className="blog-checkbox-row">
                       <label className="blog-label">

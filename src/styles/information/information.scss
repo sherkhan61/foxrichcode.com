@@ -1,0 +1,30 @@
+.information {
+  height: 50vh;
+  & h2,
+  & p {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+}
+.information {
+  border: 1px solid #cedfef;
+  background-color: #fff;
+  & h2 {
+    padding: 0.5rem;
+    background-color: #b7c0c5;
+  }
+  & p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    color: #036;
+    & a {
+      color: #003366;
+      border-bottom: 2px solid #5787b8;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

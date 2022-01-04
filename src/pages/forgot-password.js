@@ -15,7 +15,7 @@ export default class ForgotPassword extends React.Component {
       email: this.email
     }
 
-    axios.post('https://foxrichcode.com/auth/forgot-password', data)
+    axios.post('https://api-foxrichcode.herokuapp.com/auth/forgot-password', data)
       .then(response => {
         console.log('Your user received an email', console.log(response));
       })
