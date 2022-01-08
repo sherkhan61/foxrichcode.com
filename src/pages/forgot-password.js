@@ -44,8 +44,7 @@ export default class ForgotPassword extends React.Component {
                       <input type="email"
                              name="email"
                              className="blog-input-text"
-                             placeholder="Введите ваш email"
-                             onChange={e => this.email = e.target.value}/>
+                             placeholder="Введите ваш email" />
                     </div>
                     <div className="blog-row">
                       <button className="blog-btn blog-btn-primary reset">
