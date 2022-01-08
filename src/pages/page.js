@@ -59,7 +59,7 @@ export default class Page extends React.Component {
   render() {
     let { data } = this.props
     const review = data.strapiArticles
-    const domain = `https://foxrichcode.netlify.app`
+    const domain = `https://foxrichcode.com`
     const shareUrl = `${domain}/page/${review.strapiId}/${review.link}`
     const seoTitle = `${review.title} | Foxrichcode.com`
 
@@ -156,7 +156,7 @@ export default class Page extends React.Component {
                             <WhatsappShareButton
                               url={shareUrl}
                               title={review.title}
-                              separator=":: "
+                              separator=": "
                             >
                               <WhatsappIcon size={30}/>
                               <span>Whatsapp</span>

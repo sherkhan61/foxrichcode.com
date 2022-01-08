@@ -265,6 +265,35 @@
   position: relative;
   align-items: center;
   height: 100%;
+  & div {
+    display: inline-flex;
+    align-items: center;
+    & button {
+      padding: 1rem 1rem 1.8rem 1rem;
+      & span {
+        text-align: center;
+        white-space: nowrap;
+        font-size: 1.3rem;
+        font-weight: 700;
+        line-height: 1.2;
+        color: #036;
+        text-transform: lowercase;
+      }
+    }
+    & ul li {
+      text-align: center;
+      white-space: nowrap;
+      font-size: 1.3rem;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #036;
+      text-transform: lowercase;
+      & .profile {
+        height: 100%;
+        padding: 0;
+      }
+    }
+  }
   & a {
     display: block;
     height: 24px;

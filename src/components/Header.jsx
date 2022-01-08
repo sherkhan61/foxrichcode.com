@@ -5,7 +5,7 @@ import MenuIcon from "@material-ui/icons/Menu"
 import CloseIcon from "@material-ui/icons/Close"
 import "../styles/Header.scss"
 import PersonIcon from '@material-ui/icons/Person';
-import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+import { MenuListComposition } from "./Menu"
 
 
 const Header = ({ user, setUser }) => {
@@ -30,21 +30,11 @@ const Header = ({ user, setUser }) => {
 
   const logo = query.file.publicURL
 
-  const handleSignOut = () => {
-    localStorage.clear()
-    setUser(null)
-  }
-
   let buttons;
   if (user) {
     buttons = (
       <div className="user_item">
-        <Link to={'/'} onClick={handleSignOut}>
-          <button>
-            <ExitToAppIcon />
-            <span>Выйти</span>
-          </button>
-        </Link>
+        <MenuListComposition user={user} setUser={setUser}/>
       </div>
     )
   } else {

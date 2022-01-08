@@ -35,7 +35,6 @@ export default class ResetPassword extends React.Component {
       return <RedirectFunction url={'/sign-in'}/>
     }
 
-
     return (
       <>
         <Header/>
@@ -53,14 +52,14 @@ export default class ResetPassword extends React.Component {
                       <input type="password"
                              name="password"
                              className="blog-input-password"
-                             placeholder="пароль"
+                             placeholder="новый пароль"
                              onChange={e => this.password = e.target.value}/>
                     </div>
                     <div className="blog-row">
                       <input type="password"
                              name="password"
                              className="blog-input-password"
-                             placeholder="подтвердить пароль"
+                             placeholder="подтвердить новый пароль"
                              onChange={e => this.passwordConfirmation = e.target.value}/>
                     </div>
                     <div className="blog-row">

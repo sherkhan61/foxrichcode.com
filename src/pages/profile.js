@@ -4,9 +4,10 @@ import "../styles/information/information.scss"
 import { Link } from "gatsby"
 import Layout from "../components/Layout"
 import axios from "axios"
+import { ProfileInfo } from "../components/profile/ProfileInfo"
 
 
-export default class Confirmed extends React.Component {
+export default class Profile extends React.Component {
   state = {}
 
   componentDidMount() {
@@ -33,15 +34,15 @@ export default class Confirmed extends React.Component {
   }
   render() {
     return (
-      <Layout>
-        <Seo title="Подтверждение регистрации учетной записи"/>
+      <Layout user={this.state.user} setUser={this.setUser}>
+        <Seo title="Профиль"/>
         <main className="main">
           <div className="main_container">
             <div className="container">
               <div className="information">
-                <h2>Регистрация успешна завершена!</h2>
-                <p>Спасибо за регистрацию, ваша учётная запись была создана</p>
-                <p>Вы можете войти в систему, используя ваш email и пароль</p>
+                <h2>Профиль пользователя</h2>
+                <ProfileInfo user={this.state.user}/>
+                <p></p>
                 <p>
                   <Link to={"/"}>Вернуться на главную</Link>
                 </p>

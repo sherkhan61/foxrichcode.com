@@ -6,8 +6,8 @@ import { Link } from "gatsby"
 import axios from "axios"
 
 
-
 export default class ForgotPassword extends React.Component {
+
   handleSubmit = e => {
     e.preventDefault()
 
@@ -22,11 +22,11 @@ export default class ForgotPassword extends React.Component {
       .catch(error => {
         console.log('An error occurred:', error.response);
       });
-
   }
 
 
   render() {
+
     return (
       <>
         <Header/>
@@ -44,7 +44,8 @@ export default class ForgotPassword extends React.Component {
                       <input type="email"
                              name="email"
                              className="blog-input-text"
-                             placeholder="Введите ваш email"/>
+                             placeholder="Введите ваш email"
+                             onChange={e => this.email = e.target.value}/>
                     </div>
                     <div className="blog-row">
                       <button className="blog-btn blog-btn-primary reset">
