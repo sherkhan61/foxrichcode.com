@@ -4,8 +4,13 @@ import { graphql, Link, useStaticQuery } from "gatsby"
 import MenuIcon from "@material-ui/icons/Menu"
 import CloseIcon from "@material-ui/icons/Close"
 import "../styles/Header.scss"
-import PersonIcon from '@material-ui/icons/Person';
+import PersonIcon from "@material-ui/icons/Person"
 import { MenuListComposition } from "./Menu"
+import HomeIcon from "@material-ui/icons/Home"
+import WebIcon from "@material-ui/icons/Web"
+import PhoneIphoneIcon from "@material-ui/icons/PhoneIphone"
+import SecurityIcon from "@material-ui/icons/Security"
+import MemoryIcon from "@material-ui/icons/Memory"
 
 
 const Header = ({ user, setUser }) => {
@@ -30,7 +35,7 @@ const Header = ({ user, setUser }) => {
 
   const logo = query.file.publicURL
 
-  let buttons;
+  let buttons
   if (user) {
     buttons = (
       <div className="user_item">
@@ -40,9 +45,9 @@ const Header = ({ user, setUser }) => {
   } else {
     buttons = (
       <div className="user_item">
-        <Link to={'/sign-in'}>
+        <Link to={"/sign-in"}>
           <button>
-            <PersonIcon width="16px" height="16px" />
+            <PersonIcon width="16px" height="16px"/>
             <span>Войти</span>
           </button>
         </Link>
@@ -95,7 +100,7 @@ const Header = ({ user, setUser }) => {
               </div>
 
               <div className="header_right">
-                { buttons }
+                {buttons}
                 {/*<div className="search-block">
                   <div className="search-icon">
                     <SearchIcon/>
@@ -110,6 +115,9 @@ const Header = ({ user, setUser }) => {
         </div>
       </header>
       <div className={state.isOpen ? "sidenav sidenav--is-open" : "sidenav"}>
+        <div className="sidenav-logo">
+          <img src={logo} alt="logo" width="140px" height="57px" />
+        </div>
         <div className="sidenav__close">
           <button className="sidenav__close-button" type="button" onClick={handleToggle}>
             <CloseIcon width="22px" height="22px" className="sidenav__close-icon"/>
@@ -119,19 +127,34 @@ const Header = ({ user, setUser }) => {
           <h1>Категории</h1>
           <ul className="sidenav__menu">
             <li className="menu-item">
-              <Link to="/">Главная</Link>
+              <Link to="/">
+                <HomeIcon width="20px" height="20px"/>
+                <span>Главная</span>
+              </Link>
             </li>
             <li className="menu-item">
-              <Link to="/web-development">Веб разработка</Link>
+              <Link to="/web-development">
+                <WebIcon width="20px" height="20px"/>
+                <span>Веб разработка</span>
+              </Link>
             </li>
             <li className="menu-item">
-              <Link to="/mobile-development">Мобильная разработка</Link>
+              <Link to="/mobile-development">
+                <PhoneIphoneIcon width="20px" height="20px"/>
+                <span>Мобильная разработка</span>
+              </Link>
             </li>
             <li className="menu-item">
-              <Link to="/cyber-security">Кибербезопасность</Link>
+              <Link to="/cyber-security">
+                <SecurityIcon width="20px" height="20px"/>
+                <span>Кибербезопасность</span>
+              </Link>
             </li>
             <li className="menu-item">
-              <Link to="/artificial-intelligence">Искусственный интеллект</Link>
+              <Link to="/artificial-intelligence">
+                <MemoryIcon width="20px" height="20px"/>
+                <span>Искусственный интеллект</span>
+              </Link>
             </li>
           </ul>
         </nav>

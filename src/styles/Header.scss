@@ -247,6 +247,12 @@
 }
 
 @media (min-width: 992px) {
+  .side-menu-button {
+    display: none;
+  }
+  .logo {
+    margin-left: 0;
+  }
   .d-lg-block {
     display: block !important;
   }
@@ -408,6 +414,16 @@
   transition: transform 0.5s cubic-bezier(0.55, 0, 0.1, 1);
   -webkit-transform: translateX(-320px);
   transform: translateX(-320px);
+
+  & .sidenav-logo {
+    display: flex;
+    width: 100%;
+    & img {
+      display: flex;
+      justify-content: center;
+      margin: 1rem 0 0 2rem;
+    }
+  }
 }
 
 .sidenav--is-open {
@@ -454,7 +470,7 @@
 }
 
 .sidenav__menu-container {
-  margin-top: 52px;
+  margin-top: 12px;
   & h1 {
     padding: 1rem 2.2rem;
     font-family: "Montserrat", sans-serif;
@@ -470,7 +486,8 @@
 
   & a {
     width: 100%;
-    display: block;
+    height: 100%;
+    display: inline-flex;
     color: #036;
     padding: 12px 22px;
     font-family: "Montserrat", sans-serif;
@@ -478,6 +495,13 @@
     font-weight: 600;
     -webkit-transition: background 0.3s ease;
     transition: background 0.3s ease;
+
+    & svg {
+      margin-right: 5px;
+      width: 20px;
+      height: 100%;
+      align-items: center;
+    }
   }
 }
 
