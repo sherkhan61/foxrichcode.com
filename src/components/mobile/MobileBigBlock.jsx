@@ -27,7 +27,8 @@ const MobileBigBlock = ({ categories }) => {
                     <picture>
                       <img
                         src={d.media.url}
-                        alt=""/>
+                        alt={d.media.name}
+                        loading="lazy"/>
                     </picture>
                   </Link>
                 </div>
@@ -55,7 +56,8 @@ const MobileBigBlock = ({ categories }) => {
                     <picture>
                       <img
                         src={d.media.url}
-                        alt=""/>
+                        alt={d.media.name}
+                        loading="lazy"/>
                     </picture>
                   </Link>
                 </div>
@@ -87,7 +89,8 @@ const MobileBigBlock = ({ categories }) => {
                         <picture>
                           <img
                             src={a.media.url}
-                            alt=""/>
+                            alt={a.media.name}
+                            loading="lazy"/>
                         </picture>
                       </Link>
                     </div>

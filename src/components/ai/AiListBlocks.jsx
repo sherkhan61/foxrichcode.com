@@ -28,7 +28,8 @@ const AiListBlocks = ({ categories }) => {
                       <picture>
                         <img
                           src={p.media.url}
-                          alt=""/>
+                          alt=""
+                          loading="lazy"/>
                       </picture>
                     </Link>
                   </div>

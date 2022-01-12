@@ -28,7 +28,8 @@ const CyberListBlocks = ({ categories }) => {
                       <picture>
                         <img
                           src={p.media.url}
-                          alt=""/>
+                          alt={p.media.name}
+                          loading="lazy"/>
                       </picture>
                     </Link>
                   </div>

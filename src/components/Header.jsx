@@ -42,7 +42,7 @@ const Header = ({ user, setUser }) => {
       <div className="user_item">
         <Link to={'/sign-in'}>
           <button>
-            <PersonIcon />
+            <PersonIcon width="16px" height="16px" />
             <span>Войти</span>
           </button>
         </Link>
@@ -58,7 +58,7 @@ const Header = ({ user, setUser }) => {
           <div className="container">
             <div className="logo">
               <Link to="/">
-                <img src={logo} alt="logo"/>
+                <img src={logo} alt="logo" width="160px" height="57px"/>
               </Link>
             </div>
           </div>
@@ -72,7 +72,7 @@ const Header = ({ user, setUser }) => {
               <div className="header_left">
                 <div className="side-menu-button">
                   <button className="sidenav__open-button" type="button" onClick={handleToggle}>
-                    <MenuIcon className="sidenav__open-icon"/>
+                    <MenuIcon width="28px" height="28px" className="sidenav__open-icon"/>
                   </button>
                 </div>
                 <nav className="d-none d-lg-block">
@@ -112,7 +112,7 @@ const Header = ({ user, setUser }) => {
       <div className={state.isOpen ? "sidenav sidenav--is-open" : "sidenav"}>
         <div className="sidenav__close">
           <button className="sidenav__close-button" type="button" onClick={handleToggle}>
-            <CloseIcon className="sidenav__close-icon"/>
+            <CloseIcon width="22px" height="22px" className="sidenav__close-icon"/>
           </button>
         </div>
         <nav className="sidenav__menu-container">

@@ -44,7 +44,7 @@ const Main = () => {
         <div className="row breadcrumb">
           <div className="col-lg-8">
             <Typography color="textPrimary">
-              <HomeIcon />
+              <HomeIcon width="20px" height="20px" />
               <span>Главная</span>
             </Typography>
           </div>

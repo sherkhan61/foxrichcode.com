@@ -30,7 +30,8 @@ const Footer = () => {
     <footer className="bottom-nav">
       <div className="bottom-nav__reducer">
         <div className="bottom-nav__buttons nav-buttons">
-          <img src={logo} alt="logo" className="white-logo" loading="lazy"/>
+          <img src={logo} alt="logo" className="white-logo"
+               loading="lazy" width="131px" height="47px"/>
           <ul className="bottom-nav__buttons-wrapper">
             <li>
               <a href="#" className="bottom-nav__button bottom-nav__buttons-feedback"
@@ -134,17 +135,17 @@ const Footer = () => {
             <ul className="bottom-nav__social-list">
               <li>
                 <a href="" className="bottom-nav__link">
-                  <InstagramIcon className="lazyloaded"/>
+                  <InstagramIcon width="35px" height="35px" className="lazyloaded"/>
                 </a>
               </li>
               <li>
                 <a href="" className="bottom-nav__link">
-                  <FacebookIcon className="lazyloaded"/>
+                  <FacebookIcon width="35px" height="35px" className="lazyloaded"/>
                 </a>
               </li>
               <li>
                 <a href="" className="bottom-nav__link">
-                  <YouTubeIcon className="lazyloaded"/>
+                  <YouTubeIcon width="35px" height="35px" className="lazyloaded"/>
                 </a>
               </li>
             </ul>
@@ -154,12 +155,16 @@ const Footer = () => {
             <ul className="mobile-download-links__list">
               <li>
                 <a href="" className="mobile-download-links__item mobile-download-links__item--app-store">
-                  <img src={apple} alt="" className="mobile-download-links__icon lazyloaded"/>
+                  <img src={apple} alt="apple-icon"
+                       className="mobile-download-links__icon lazyloaded"
+                       width="120px" height="40px" />
                 </a>
               </li>
               <li>
                 <a href="" className="mobile-download-links__item mobile-download-links__item--app-store">
-                  <img src={google} alt="" className="mobile-download-links__icon lazyloaded"/>
+                  <img src={google} alt="google-play-icon"
+                       className="mobile-download-links__icon lazyloaded"
+                       width="120px" height="40px"/>
                 </a>
               </li>
             </ul>

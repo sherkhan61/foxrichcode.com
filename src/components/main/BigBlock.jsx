@@ -18,7 +18,8 @@ const BigBlock = ({ reviews }) => {
                     <picture>
                       <img
                         src={d.node.media.url}
-                        alt={d.node.media.name} />
+                        alt={d.node.media.name}
+                        width="788" height="447px" />
                     </picture>
                   </Link>
                 </div>
@@ -58,7 +59,8 @@ const BigBlock = ({ reviews }) => {
                       <picture>
                         <img
                           src={a.node.media.url}
-                          alt={a.node.media.name} />
+                          alt={a.node.media.name}
+                          width="252px" height="130px" />
                       </picture>
                     </Link>
                   </div>
