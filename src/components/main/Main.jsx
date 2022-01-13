@@ -8,6 +8,7 @@ import CategoriesSections from "./CategoriesSections"
 import HomeIcon from "@material-ui/icons/Home"
 
 
+
 const Main = () => {
   const query = useStaticQuery(
     graphql`
