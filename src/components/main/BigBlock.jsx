@@ -1,6 +1,6 @@
 import React from "react"
 import "../../styles/main/BigBlock.scss"
-import AccessTimeIcon from "@material-ui/icons/AccessTime"
+import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
 import { Link } from "gatsby"
 
 
@@ -33,7 +33,7 @@ const BigBlock = ({ reviews }) => {
                       </span>
                     </div>
                     <div className="time">
-                      <AccessTimeIcon/>
+                      <CalendarTodayIcon/>
                       <span>{d.node.date}</span>
                     </div>
                     <h2 className="title title-color-default">
@@ -74,7 +74,7 @@ const BigBlock = ({ reviews }) => {
                         </span>
                       </div>
                       <div className="time">
-                        <AccessTimeIcon/>
+                        <CalendarTodayIcon/>
                         <span>{a.node.date}</span>
                       </div>
                       <h2 className="title title-color-default">

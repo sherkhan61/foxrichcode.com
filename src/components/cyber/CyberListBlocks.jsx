@@ -1,6 +1,6 @@
 import React from "react"
 import "../../styles/main/ListBlocks.scss"
-import AccessTimeIcon from "@material-ui/icons/AccessTime"
+import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
 import { Link } from "gatsby"
 import * as _ from "lodash"
 import moment from "moment"
@@ -36,7 +36,7 @@ const CyberListBlocks = ({ categories }) => {
                   <div className="info">
                     <header className="info-header">
                       <div className="time">
-                        <AccessTimeIcon/>
+                        <CalendarTodayIcon/>
                         <span>{p.date}</span>
                       </div>
                       <h2 className="title title-color-default">

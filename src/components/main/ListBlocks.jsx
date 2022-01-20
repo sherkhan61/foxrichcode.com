@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import "../../styles/main/ListBlocks.scss"
-import AccessTimeIcon from "@material-ui/icons/AccessTime"
+import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
 import { Link } from "gatsby"
 
 
@@ -38,7 +38,7 @@ const ListBlocks = ({ reviews }) => {
                         </span>
                       </div>
                       <div className="time">
-                        <AccessTimeIcon/>
+                        <CalendarTodayIcon/>
                         <span>{p.node.date}</span>
                       </div>
                       <h2 className="title title-color-default">

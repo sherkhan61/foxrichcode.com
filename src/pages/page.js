@@ -3,7 +3,7 @@ import Layout from "../components/Layout"
 import { graphql, Link } from "gatsby"
 import Breadcrumbs from "@material-ui/core/Breadcrumbs"
 import Typography from "@material-ui/core/Typography"
-import AccessTimeIcon from "@material-ui/icons/AccessTime"
+import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
 import ReactMarkdown from "react-markdown"
 import "../styles/Page.scss"
 import HomeIcon from "@material-ui/icons/Home"
@@ -101,7 +101,7 @@ export default class Page extends React.Component {
                         {review.title}
                       </h1>
                       <div className="entry__meta-holder">
-                        <AccessTimeIcon/>
+                        <CalendarTodayIcon/>
                         <span>{review.date}</span>
                       </div>
                     </div>

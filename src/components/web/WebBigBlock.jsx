@@ -1,6 +1,6 @@
 import React from "react"
 import * as styles from "../../styles/web/WebBigBlock.module.scss"
-import AccessTimeIcon from "@material-ui/icons/AccessTime"
+import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
 import { Link } from "gatsby"
 import * as _ from "lodash"
 import moment from "moment"
@@ -35,7 +35,7 @@ const WebBigBlock = ({ categories }) => {
                 <div className={styles.info}>
                   <header className={styles.infoHeader}>
                     <div className={styles.time}>
-                      <AccessTimeIcon/>
+                      <CalendarTodayIcon/>
                       <span>{d.date}</span>
                     </div>
                     <h2 className={styles.title}>
@@ -64,7 +64,7 @@ const WebBigBlock = ({ categories }) => {
                 <div className={styles.info}>
                   <header className={styles.infoHeader}>
                     <div className={styles.time}>
-                      <AccessTimeIcon/>
+                      <CalendarTodayIcon/>
                       <span>{d.date}</span>
                     </div>
                     <h3 className={styles.title}>
@@ -97,7 +97,7 @@ const WebBigBlock = ({ categories }) => {
                     <div className="info">
                       <header className="info-header">
                         <div className="time">
-                          <AccessTimeIcon/>
+                          <CalendarTodayIcon/>
                           <span>{a.date}</span>
                         </div>
                         <h2 className="title title-color-default">

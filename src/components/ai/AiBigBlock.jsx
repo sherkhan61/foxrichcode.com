@@ -1,6 +1,6 @@
 import React from "react"
 import * as classes from "../../styles/ai/AiBigBlock.module.scss"
-import AccessTimeIcon from "@material-ui/icons/AccessTime"
+import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
 import { Link } from "gatsby"
 import * as _ from "lodash"
 import moment from "moment"
@@ -35,7 +35,7 @@ const AiBigBlock = ({ categories }) => {
                 <div className={classes.info}>
                   <header className={classes.infoHeader}>
                     <div className={classes.time}>
-                      <AccessTimeIcon/>
+                      <CalendarTodayIcon/>
                       <span>{d.date}</span>
                     </div>
                     <h2 className={classes.title}>
@@ -64,7 +64,7 @@ const AiBigBlock = ({ categories }) => {
                 <div className={classes.info}>
                   <header className={classes.infoHeader}>
                     <div className={classes.time}>
-                      <AccessTimeIcon/>
+                      <CalendarTodayIcon/>
                       <span>{d.date}</span>
                     </div>
                     <h3 className={classes.title}>
@@ -97,7 +97,7 @@ const AiBigBlock = ({ categories }) => {
                     <div className="info">
                       <header className="info-header">
                         <div className="time">
-                          <AccessTimeIcon/>
+                          <CalendarTodayIcon/>
                           <span>{a.date}</span>
                         </div>
                         <h2 className="title title-color-default">
