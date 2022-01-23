@@ -2,7 +2,7 @@ import React from "react"
 import Seo from "../components/Seo"
 import "../styles/information/information.scss"
 import { Link } from "gatsby"
-import Layout from "../components/Layout"
+import Layout from "../components/ui/Layout"
 import axios from "axios"
 import { ProfileInfo } from "../components/profile/ProfileInfo"
 

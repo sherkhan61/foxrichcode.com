@@ -1,6 +1,6 @@
 import React from "react"
 import Seo from "../components/Seo"
-import Header from "../components/Header"
+import Header from "../components/ui/Header"
 import "../styles/SignIn.scss"
 import { Link } from "gatsby"
 import axios from "axios"

@@ -1,7 +1,7 @@
 import React from "react"
 import "../styles/contacts/Contacts.scss"
 import Button from "@material-ui/core/Button"
-import Layout from "../components/Layout"
+import Layout from "../components/ui/Layout"
 import Seo from "../components/Seo"
 import axios from "axios"
 

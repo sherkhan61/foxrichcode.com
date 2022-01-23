@@ -1,5 +1,5 @@
 import * as React from "react"
-import Layout from "../components/Layout"
+import Layout from "../components/ui/Layout"
 import { graphql, Link } from "gatsby"
 import Breadcrumbs from "@material-ui/core/Breadcrumbs"
 import Typography from "@material-ui/core/Typography"
@@ -25,7 +25,7 @@ import {
 } from "react-share"
 import { Partners } from "../components/Partners"
 import Seo from "../components/Seo"
-import Scroll from "../components/Scroll"
+import Scroll from "../components/ui/Scroll"
 import * as PropTypes from "prop-types"
 import axios from "axios"
 

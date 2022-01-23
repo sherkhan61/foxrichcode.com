@@ -1,6 +1,6 @@
 import React from "react"
 import RedirectFunction from "../components/RedirectFunction"
-import Header from "../components/Header"
+import Header from "../components/ui/Header"
 import Seo from "../components/Seo"
 import axios from 'axios';
 

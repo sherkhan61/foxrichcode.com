@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby"
-import "../styles/Sidebar.scss"
+import "../styles/ui/Sidebar.scss"
 
 export const Partners = () => {
 

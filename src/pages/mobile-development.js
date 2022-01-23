@@ -1,6 +1,6 @@
 import React from "react"
-import Layout from "../components/Layout"
-import Scroll from "../components/Scroll"
+import Layout from "../components/ui/Layout"
+import Scroll from "../components/ui/Scroll"
 import { Mobile } from "../components/mobile/Mobile"
 import Seo from "../components/Seo"
 import axios from "axios"

@@ -1,6 +1,6 @@
 import React from "react"
 import "../../styles/main/BigBlock.scss"
-import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
+import CalendarTodayIcon from "@material-ui/icons/CalendarToday"
 import { Link } from "gatsby"
 
 
@@ -16,7 +16,7 @@ const BigBlock = ({ reviews }) => {
                 <div className="m">
                   <Link to={`/page/${d.node.strapiId}/${d.node.link}`}>
                     <picture>
-                      <img
+                      < img
                         src={d.node.media.url}
                         alt={d.node.media.name}
                         width="788" height="447px" />

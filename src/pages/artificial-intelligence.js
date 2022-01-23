@@ -1,7 +1,7 @@
 import React from "react"
-import Layout from "../components/Layout"
+import Layout from "../components/ui/Layout"
 import Seo from "../components/Seo"
-import Scroll from "../components/Scroll"
+import Scroll from "../components/ui/Scroll"
 import Ai from "../components/ai/Ai"
 import axios from "axios"
 

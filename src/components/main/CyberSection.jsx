@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import * as _ from "lodash"
 import moment from "moment"
 
+
 const CyberSection = ({ categories }) => {
 
   let cyberObject = categories.find((_o) => _o.node.strapiId === 3)
@@ -38,7 +39,7 @@ const CyberSection = ({ categories }) => {
                       <div className="post-preview-media">
                         <img
                           src={a.media.url}
-                          alt={a.media.name} className="post-preview-media__picture" />
+                          alt={a.media.name} className="post-preview-media__picture"/>
                       </div>
                     </div>
                     <div className="article-preview-mixed__content">

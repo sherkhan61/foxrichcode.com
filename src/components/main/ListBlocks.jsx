@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import "../../styles/main/ListBlocks.scss"
-import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
+import CalendarTodayIcon from "@material-ui/icons/CalendarToday"
 import { Link } from "gatsby"
 
 
@@ -22,9 +22,9 @@ const ListBlocks = ({ reviews }) => {
                   <div className="m">
                     <Link to={`/page/${p.node.strapiId}/${p.node.link}`}>
                       <picture>
-                        <img
-                          src={p.node.media.url}
-                          alt={p.node.media.name} />
+                          <img
+                            src={p.node.media.url}
+                            alt={p.node.media.name}/>
                       </picture>
                     </Link>
                   </div>

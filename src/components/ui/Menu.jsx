@@ -7,7 +7,7 @@ import Popper from "@material-ui/core/Popper"
 import MenuItem from "@material-ui/core/MenuItem"
 import MenuList from "@material-ui/core/MenuList"
 import { makeStyles } from "@material-ui/core/styles"
-import RedirectFunction from "./RedirectFunction"
+import RedirectFunction from "../RedirectFunction"
 import { Link } from "gatsby"
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import AccountBoxIcon from "@material-ui/icons/AccountBox"

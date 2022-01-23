@@ -39,6 +39,7 @@ const Main = () => {
 
   const reviews = query.allStrapiArticles.edges
 
+
   return (
     <div className="main_container">
       <div className="container">

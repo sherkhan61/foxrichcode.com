@@ -35,9 +35,9 @@ const WebSection = ({ categories }) => {
                                                     article-preview-mixed--with-absolute-secondary-item">
                     <div className="article-preview-mixed__image">
                       <div className="post-preview-media">
-                        <img
-                          src={a.media.url}
-                          alt={a.media.name} className="post-preview-media__picture"/>
+                          <img
+                            src={a.media.url}
+                            alt={a.media.name} className="post-preview-media__picture"/>
                       </div>
                     </div>
                     <div className="article-preview-mixed__content">

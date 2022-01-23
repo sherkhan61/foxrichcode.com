@@ -1,8 +1,8 @@
 import * as React from "react"
 import "../styles/index.scss"
-import Layout from "../components/Layout"
+import Layout from "../components/ui/Layout"
 import Main from "../components/main/Main"
-import Scroll from "../components/Scroll"
+import Scroll from "../components/ui/Scroll"
 import Seo from "../components/Seo"
 import axios from "axios"
 
